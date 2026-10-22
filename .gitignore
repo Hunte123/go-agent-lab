@@ -1,0 +1,5 @@
+reports/
+.evalruns/
+agentlab
+*.out
+.env

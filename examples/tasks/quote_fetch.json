@@ -1,0 +1,9 @@
+{
+  "name": "quote_fetch",
+  "prompt": "查询贵州茅台(600519)的最新行情，把结果写入 price.txt，格式：一行文本包含名称和价格。",
+  "max_steps": 8,
+  "verifiers": [
+    {"type": "file_exists", "path": "price.txt", "desc": "生成了 price.txt"},
+    {"type": "file_contains", "path": "price.txt", "regex": "茅台", "desc": "内容包含股票名称"}
+  ]
+}

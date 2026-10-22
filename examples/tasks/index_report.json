@@ -1,0 +1,10 @@
+{
+  "name": "index_report",
+  "prompt": "查询上证指数(sh000001)和创业板指(sz399006)的行情，写入 index.md，文件需包含两个指数的名称，用Markdown列表呈现。",
+  "max_steps": 10,
+  "verifiers": [
+    {"type": "file_exists", "path": "index.md"},
+    {"type": "file_contains", "path": "index.md", "regex": "上证"},
+    {"type": "file_contains", "path": "index.md", "regex": "创业板"}
+  ]
+}
